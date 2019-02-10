@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+*{
+  font-family:Raleway, sans-serif;
+}
+
+body{
+  background-size:cover;
+}
+
+p{
+  font-size:1.61rem;
+  line-height:2.678rem;
+  letter-spacing: 1.823px;
+}
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+.container-lg{
+    min-height:400px;
+}
+
+footer ul li a:hover {
+  color: #2196f3 ;
+}
+
+footer ul li a{
+  color: white;
+}
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.material-placeholder{
+  margin:20px 0;
+}
+
+a.link:hover{
+  color:#e91e63;
+}
+
+/* label focus color */
+.input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #e91e63   !important;
+ }
+
+/* label underline focus color */
+ .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #e91e63   !important;
+  box-shadow: 0 1px 0 0 #e91e63   !important;
+ }
+
+ /* label focus color */
+.input-field input[type=email]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+  color: #e91e63   !important;
+ }
+
+/* label underline focus color */
+ .input-field input[type=email]:focus, .materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #e91e63   !important;
+  box-shadow: 0 1px 0 0 #e91e63   !important;
+ }
+
+ .btn {
+  overflow: hidden;
+}
+.btn:hover:before {
+  opacity:1;
+}
+
+.btn:before {
+    content: '';
+    opacity: 0;
+    background-color: #2196f3;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    transition: opacity .2s;
+    z-index: -1;
+}
+
+i{
+  margin-right:8px;
+}
