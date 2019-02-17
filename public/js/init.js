@@ -1,28 +1,30 @@
-M.AutoInit();
-$("#webdev").toggle();
-$("#gdesign").toggle();
-$("#photography").toggle();
+
 $(document).ready(function () {
+    M.AutoInit();
+    $("#webdev").show();
+    $("#gdesign").toggle();
+    $("#photography").toggle();
+
+
     $("#webdev-btn").click(function () {
-        $("#webdev").fadeToggle("slow");
+        $("#webdev").fadeIn("slow");
         $("#gdesign").fadeOut();
         $("#photography").fadeOut();
 
     });
-});
 
-$(document).ready(function () {
     $("#gdesign-btn").click(function () {
-        $("#gdesign").fadeToggle("slow");
+        $("#gdesign").fadeIn("slow");
         $("#webdev").fadeOut();
         $("#photography").fadeOut();
     });
-});
 
-$(document).ready(function () {
+
     $("#photography-btn").click(function () {
-        $("#photography").fadeToggle("slow");
+        $("#photography").fadeIn("slow");
         $("#gdesign").fadeOut();
         $("#webdev").fadeOut();
+
     });
 });
+

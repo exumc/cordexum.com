@@ -21,10 +21,6 @@ main {
   font-family:Raleway, sans-serif;
 }
 
-body{
-  background-size:cover;
-}
-
 p{
   font-size:1.61rem;
   line-height:2.678rem;
@@ -34,25 +30,12 @@ p{
 header {
   position: relative;
   background-color: black;
+  background-image: url(/images/bg.jpg);
+  background-size: cover;
   height: 100vh;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
-}
-
-header video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
 }
 
 header .container {

@@ -19,13 +19,11 @@ class MyFooter extends React.Component {
                         </Col>
                         <Col s={6}>
                             <ul className="list-inline">
-                                <li><a className="" href="https://www.instagram.com/cord.h.exum/"><i className="fab fa-instagram fa-2x"></i></a></li>
+                                <li><a className="" href="https://www.instagram.com/iammisterpink/"><i className="fab fa-instagram fa-2x"></i></a></li>
                                 <li><a className="" href="https://github.com/exumc"><i className="fab fa-github fa-2x"></i></a></li>
                                 <li><a className="" href="https://www.linkedin.com/in/cordexum/"><i className="fab fa-linkedin fa-2x"></i></a></li>
                             </ul>
-                            <ul>
-                                <li><a href="assets/CordExumResume2018.pdf"><i className="fas fa-file-pdf fa-2x"></i>Resume</a></li>
-                            </ul>
+                         
                         </Col>
                     </Row>
                 </div>
