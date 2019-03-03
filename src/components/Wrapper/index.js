@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import M from "materialize-css";
 
 class Wrapper extends React.Component {
 

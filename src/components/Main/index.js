@@ -3,11 +3,6 @@ import "./style.css"
 import { Row, Col } from 'react-materialize'
 
 class Main extends React.Component {
-
-    componentDidMount() {
-       
-    }
-
     render() {
         return (
             <main>
