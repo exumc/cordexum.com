@@ -2,12 +2,13 @@ import React from "react";
 import "./style.css"
 import { Row } from "react-materialize"
 import {Link} from 'react-router-dom'
+
 class Hendrix extends React.Component {
     render() {
         return (
             <div className='container center'>
                 <div className="portfolio">
-                <Link to='/graphicdesign'><i class="fas fa-chevron-left fa-3x left pink-text"></i></Link>
+                <Link to='/portfolio/graphicdesign'><i class="fas fa-chevron-left fa-3x left pink-text"></i></Link>
                     <Row>
                         <img src='./images/hendrix/fenderLogoType.png' alt='' className='responsive-img' />
                     </Row>
