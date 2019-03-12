@@ -2,6 +2,7 @@
   "name": "cordexum",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.cordexum.com/",
   "dependencies": {
     "materialize-css": "^1.0.0-rc.2",
     "react": "^16.8.1",
@@ -15,7 +16,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && cd build && git add . && git commit -m 'pushing production build' && git push origin gh-pages"
+    "predeploy": "npm run build",
+    "deploy": "aws s3 sync build/ s3://my-portfolio-cordexum"
   },
   "eslintConfig": {
     "extends": "react-app"
