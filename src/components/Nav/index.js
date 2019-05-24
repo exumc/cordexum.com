@@ -9,22 +9,22 @@ class Nav extends React.Component {
     }
     render() {
         return (
-            <nav>
-                <div className="nav-wrapper pink">
-                    <a href="#" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+            <nav className="slide">
+                <div className="nav-wrapper white">
+                    <a href="#nav" data-target="slide-out" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 
                     <ul id="nav-mobile" className="hide-on-med-and-down">
-                        <li><Link to="/portfolio/graphicdesign">Graphic Design</Link></li>
-                        <li><Link to="/portfolio/webdev">Web Development</Link></li>
-                        <li><Link to="/portfolio/photography">Photography</Link></li>
+                        <li><a href="/" className="btn pink">Home</a></li>
                     </ul>
 
                     <ul className="sidenav" id="slide-out">
                         <li><Link to="/portfolio/graphicdesign" className="navLink sidenav-close">Graphic Design</Link></li>
                         <li><Link to="/portfolio/webdev" className="navLink sidenav-close">Web Development</Link></li>
-                        <li><Link to="/portfolio/photography"  className="navLink sidenav-close">Photography</Link></li>
+                        <li><Link to="/portfolio/photography" className="navLink sidenav-close">Photography</Link></li>
+                        <li><a href="/" className="navLink sidenav-close">Home</a></li>
                     </ul>
                 </div>
+
             </nav>
         )
     }

@@ -4,19 +4,51 @@ import Nav from '../Nav'
 import GraphicDesign from '../GraphicDesign'
 import WebDev from '../WebDev'
 import Photography from '../Photography'
-import {Route, Switch} from 'react-router-dom'
+import { Route, Switch, Link } from 'react-router-dom'
+import { Row, Col } from 'react-materialize'
 
 class Portfolio extends React.Component {
-   
+
     render() {
         return (
             <div>
                 <Nav />
                 <Switch>
-                    <Route path='/portfolio/graphicdesign' component={GraphicDesign} />
-                    <Route path='/portfolio/webdev' component={WebDev} />
-                    <Route path='/portfolio/photography' component={Photography} />
+                    <Route exact path='/portfolio/graphicdesign' component={GraphicDesign} />
+                    <Route exact path='/portfolio/webdev' component={WebDev} />
+                    <Route exact path='/portfolio/photography' component={Photography} />
+                    <Route exact path='/portfolio'>
+                        <Row className="">
+                            <Col s={12} l={4}>
+                                <Link to='/portfolio/graphicdesign'>
+                                    <div className="center-align">
+                                        <h4>Graphic Design</h4>
+                                        <img src={`../images/graphicdesign/fender.jpg`} alt='' className="responsive-img" />
+                                    </div>
+                                </Link>
+                            </Col>
+                            <Col s={12} l={4}>
+                                <Link to='/portfolio/webdev'>
+                                    <div className="center-align">
+                                        <h4>Web Development</h4>
+                                        <img src={`../images/3.jpg`} alt='' className="responsive-img" />
+                                    </div>
+                                </Link>
+                            </Col>
+                            <Col s={12} l={4}>
+                                <Link to='/portfolio/photography'>
+                                    <div className="center-align">
+                                        <h4>Photography</h4>
+                                        <img src={`../images/photography/01.jpg`} alt='' className="responsive-img" />
+                                    </div>
+                                </Link>
+                            </Col>
+                        </Row>
+                    </Route>
                 </Switch>
+
+
+
             </div>
         )
     }

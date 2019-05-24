@@ -7,7 +7,7 @@ class HCH extends React.Component {
     render() {
         return (
             <div className='container center'>
-                <Link to='/portfolio/graphicdesign'><i class="fas fa-chevron-left fa-3x left pink-text"></i></Link>
+                <Link to='/portfolio/graphicdesign'><i className="fas fa-chevron-left fa-3x left pink-text"></i></Link>
 
                 <div className="portfolio">
                     <Row>

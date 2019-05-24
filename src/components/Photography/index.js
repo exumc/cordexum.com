@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Col, Row } from 'react-materialize'
+import { Link } from 'react-router-dom'
 import M from "materialize-css";
 
 class Photography extends React.Component {
@@ -15,15 +16,20 @@ class Photography extends React.Component {
         let images = array.map(image => {
             return (<Col s={6} m={3} key={image}>
                 <div className="photobox">
-                    <img  src={`../images/photography/${image}.jpg`} alt='' className="materialboxed responsive-img" />
+                    <img src={`../images/photography/${image}.jpg`} alt='' className="materialboxed responsive-img" />
                 </div>
             </Col>)
         });
 
         return (
-            <Row> 
-                {images}
-            </Row>
+            <div className="container">
+                <Row>
+                    <Link to='/portfolio'><i className="fas fa-chevron-left fa-3x left pink-text backBtn"></i></Link>
+                </Row>
+                <Row>
+                    {images}
+                </Row>
+            </div>
         )
     }
 }

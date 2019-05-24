@@ -8,7 +8,7 @@ class Hendrix extends React.Component {
         return (
             <div className='container center'>
                 <div className="portfolio">
-                <Link to='/portfolio/graphicdesign'><i class="fas fa-chevron-left fa-3x left pink-text"></i></Link>
+                <Link to='/portfolio/graphicdesign'><i className="fas fa-chevron-left fa-3x left pink-text"></i></Link>
                     <Row>
                         <img src='./images/hendrix/fenderLogoType.png' alt='' className='responsive-img' />
                     </Row>

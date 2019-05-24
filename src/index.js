@@ -6,6 +6,8 @@ import Hendrix from './components/Hendrix'
 import Pixel2 from './components/Pixel2'
 import Hch from './components/Hch'
 import Portfolio from './components/Portfolio'
+import Studio from './components/Studio'
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 ReactDOM.render(
@@ -17,6 +19,7 @@ ReactDOM.render(
                   <Route path='/hendrix' component={Hendrix} />
                   <Route path='/pixel2' component={Pixel2} />
                   <Route path='/hch' component={Hch} />
+                  <Route path='/studio' component={Studio} />
             </div>
       </Router>,
       document.getElementById("root")

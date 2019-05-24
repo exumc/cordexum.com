@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css"
 import { Row, Col } from 'react-materialize'
-
+import { Link } from 'react-router-dom'
 class Main extends React.Component {
     render() {
         return (
@@ -41,7 +41,7 @@ class Main extends React.Component {
                                     <img src="./images/3.jpg" className="materialboxed responsive-img" alt="" />
                                 </Col>
                             </Row>
-                            
+
                         </Row>
                         <Row id="gdesign">
                             <Col s={4}>
@@ -67,6 +67,9 @@ class Main extends React.Component {
                         </Row>
                     </div>
                 </div>
+                <Row className="center-align">
+                    <Link to="/portfolio" className="waves-effect waves-light btn pink">My Portfolio</Link>
+                </Row>
             </main>
         )
     }
