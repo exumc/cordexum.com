@@ -14,7 +14,7 @@ class Photography extends React.Component {
         ];
 
         let images = array.map(image => {
-            return (<Col s={6} m={3} key={image}>
+            return (<Col s={12} l={6} key={image} className={"image-grid"}>
                 <div className="photobox">
                     <img src={`../images/photography/${image}.jpg`} alt='' className="materialboxed responsive-img" />
                 </div>

@@ -31,6 +31,9 @@ class WebDev extends React.Component {
                         <img src="../images/3.jpg" className="materialboxed responsive-img" alt="" />
                     </Col>
                 </Row>
+                <Row>
+                    <p className="disclaimer center">Some of the above websites funcionalities may no longer be workding due to free or limited access APIs.</p>
+                </Row>
             </div>
         )
     }

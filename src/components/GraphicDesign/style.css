@@ -1,0 +1,32 @@
+.image-grid {
+  width: inherit;
+  height: 150px;
+  overflow: hidden;
+}
+
+.image-grid img {
+  object-fit: contain;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+}
+
+.materialboxed.active {
+  object-fit: contain !important;
+}
+
+.row.portfolio {
+  padding: 0;
+  margin: 0;
+}
+
+/* responsive grid fix */
+@media only screen and (max-width: 990px) {
+  .image-grid.s12 {
+    height: auto;
+  }
+
+  .image-grid.s12 img {
+    width: 100%;
+  }
+}

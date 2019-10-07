@@ -1,3 +1,17 @@
 .photobox{
-    padding-bottom:40px;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+.image-grid{
+    margin:0; 
+    padding:0 !important;
+}
+
+.material-placeholder{
+    margin:0;
+}
+
+img.materialboxed{
+    margin-top:0;
 }
