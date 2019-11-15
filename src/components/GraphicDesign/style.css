@@ -6,7 +6,6 @@
 
 .portfolio .image-grid img {
   object-fit: contain;
-  height: 100%;
   width: auto;
   overflow: hidden;
 }

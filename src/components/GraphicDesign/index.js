@@ -23,7 +23,7 @@ class GraphicDesign extends React.Component {
   }
   render() {
     return (
-      <div className="container show-on-scroll">
+      <div className="container">
         <Row>
           <Link to="/portfolio">
             <i className="fas fa-chevron-left fa-3x left pink-text backBtn"></i>
