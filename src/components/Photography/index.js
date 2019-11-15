@@ -7,7 +7,20 @@ import M from "materialize-css";
 class Photography extends React.Component {
     componentDidMount() {
         M.AutoInit();
-    }
+    
+        const callback = function(entries) {
+          entries.forEach(entry => {
+            entry.target.classList.toggle("is-visible");
+          });
+        };
+    
+        const observer = new IntersectionObserver(callback);
+    
+        const targets = document.querySelectorAll(".show-on-scroll");
+        targets.forEach(function(target) {
+          observer.observe(target);
+        });
+      }
     render() {
         let array = [
             '01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '12', '13', '14', '15', '16'
@@ -16,7 +29,7 @@ class Photography extends React.Component {
         let images = array.map(image => {
             return (<Col s={12} l={6} key={image} className={"image-grid"}>
                 <div className="photobox">
-                    <img src={`../images/photography/${image}.jpg`} alt='' className="materialboxed responsive-img" />
+                    <img src={`../images/photography/${image}.jpg`} alt='' className="materialboxed responsive-img show-on-scroll" />
                 </div>
             </Col>)
         });

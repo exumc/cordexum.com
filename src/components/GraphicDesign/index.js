@@ -7,10 +7,23 @@ import M from "materialize-css";
 class GraphicDesign extends React.Component {
   componentDidMount() {
     M.AutoInit();
+
+    const callback = function(entries) {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("is-visible");
+      });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".show-on-scroll");
+    targets.forEach(function(target) {
+      observer.observe(target);
+    });
   }
   render() {
     return (
-      <div className="container">
+      <div className="container show-on-scroll">
         <Row>
           <Link to="/portfolio">
             <i className="fas fa-chevron-left fa-3x left pink-text backBtn"></i>
@@ -54,11 +67,11 @@ class GraphicDesign extends React.Component {
 
         <Row className="portfolio">
           <Col s={12} l={4} className={"image-grid"}>
-              <img
-                src={`../images/graphicdesign/1.jpg`}
-                alt=""
-                className="responsive-img materialboxed"
-              />
+            <img
+              src={`../images/graphicdesign/1.jpg`}
+              alt=""
+              className="responsive-img materialboxed"
+            />
           </Col>
           <Col s={12} l={4} className={"image-grid"}>
             <div>

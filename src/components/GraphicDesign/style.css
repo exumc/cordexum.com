@@ -1,17 +1,17 @@
-.image-grid {
+.portfolio .image-grid {
   width: inherit;
   height: 150px;
   overflow: hidden;
 }
 
-.image-grid img {
+.portfolio .image-grid img {
   object-fit: contain;
   height: 100%;
   width: auto;
   overflow: hidden;
 }
 
-.materialboxed.active {
+.portfolio .materialboxed.active {
   object-fit: contain !important;
 }
 
@@ -22,11 +22,11 @@
 
 /* responsive grid fix */
 @media only screen and (max-width: 990px) {
-  .image-grid.s12 {
+  .portfolio .image-grid.s12 {
     height: auto;
   }
 
-  .image-grid.s12 img {
+  .portfolio .image-grid.s12 img {
     width: 100%;
   }
 }
