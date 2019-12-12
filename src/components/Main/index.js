@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import M from "materialize-css";
 
 class Main extends React.Component {
-
+  componentDidMount() {
+    M.AutoInit();
+  }
   render() {
     return (
       <main>
@@ -52,28 +54,28 @@ class Main extends React.Component {
                 Photography
               </button>
             </Row> */}
-            <Row className="show-on-scroll">
-                <Col s={4}>
-                  <img
-                    src="./images/1.jpg"
-                    className="materialboxed responsive-img"
-                    alt=""
-                  />
-                </Col>
-                <Col s={4}>
-                  <img
-                    src="./images/5.jpg"
-                    className="materialboxed responsive-img"
-                    alt=""
-                  />
-                </Col>
-                <Col s={4}>
-                  <img
-                    src="./images/3.jpg"
-                    className="materialboxed responsive-img"
-                    alt=""
-                  />
-                </Col>
+            <Row>
+              <Col s={4}>
+                <img
+                  src="./images/1.jpg"
+                  className="materialboxed responsive-img"
+                  alt=""
+                />
+              </Col>
+              <Col s={4}>
+                <img
+                  src="./images/5.jpg"
+                  className="materialboxed responsive-img"
+                  alt=""
+                />
+              </Col>
+              <Col s={4}>
+                <img
+                  src="./images/3.jpg"
+                  className="materialboxed responsive-img"
+                  alt=""
+                />
+              </Col>
             </Row>
             <Row id="gdesign">
               <Col s={4}>
