@@ -9,8 +9,8 @@ class Nav extends React.Component {
   }
   render() {
     return (
-      <nav className="slide">
-        <div className="nav-wrapper white">
+      <nav className="slide transparent">
+        <div className="nav-wrapper ">
           <a
             href="#nav"
             data-target="slide-out"
