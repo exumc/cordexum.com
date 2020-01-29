@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  M.AutoInit();
-});
+// $(document).ready(function() {
+//   M.AutoInit();
+// });
 
 

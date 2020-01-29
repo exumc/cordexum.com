@@ -111,14 +111,17 @@ a.link:hover {
 .btn {
   overflow: hidden;
 }
+
 .btn:hover:before {
   opacity: 1;
 }
 
+a.btn:hover{
+  background-color:#2196f3 !important;
+}
 .btn:before {
   content: "";
   opacity: 0;
-  background-color: #2196f3;
   position: absolute;
   width: 100%;
   height: 100%;
