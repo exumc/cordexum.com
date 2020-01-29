@@ -34,7 +34,7 @@ class Portfolio extends React.Component {
           <Route exact path="/portfolio">
             <Row className="show-on-scroll">
               <Col s={12} l={4}>
-                <Link to="/graphicdesign">
+                <Link to="/graphicdesign" className="portlink">
                   <div className="center-align">
                     <h4>Graphic Design</h4>
                     <img
@@ -42,11 +42,12 @@ class Portfolio extends React.Component {
                       alt=""
                       className="responsive-img"
                     />
+                  <div className="overlay"></div>
                   </div>
                 </Link>
               </Col>
               <Col s={12} l={4}>
-                <Link to="/webdev">
+                <Link to="/webdev" className="portlink">
                   <div className="center-align">
                     <h4>Web Development</h4>
                     <img
@@ -58,7 +59,7 @@ class Portfolio extends React.Component {
                 </Link>
               </Col>
               <Col s={12} l={4}>
-                <Link to="/photography">
+                <Link to="/photography" className="portlink">
                   <div className="center-align">
                     <h4>Photography</h4>
                     <img
