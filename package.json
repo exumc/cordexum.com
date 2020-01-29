@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "aws s3 sync build/ s3://cordexum.com"
+    "deploy": "aws s3 sync --cache-control 'max-age=604800' build/ s3://cordexum.com"
   },
   "eslintConfig": {
     "extends": "react-app"
