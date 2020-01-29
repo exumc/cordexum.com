@@ -116,8 +116,8 @@ a.link:hover {
   opacity: 1;
 }
 
-a.btn:hover{
-  background-color:#2196f3 !important;
+a.btn:hover {
+  background-color: #2196f3 !important;
 }
 .btn:before {
   content: "";
@@ -138,8 +138,7 @@ i {
 .show-on-scroll {
   opacity: 0;
   transform: translateY(40px);
-  transition: transform 1s 0.25s ease-out,
-    opacity 0.3s 0.25s ease-out;
+  transition: transform 1s 0.25s ease-out, opacity 0.3s 0.25s ease-out;
   will-change: transform, opacity;
 }
 
