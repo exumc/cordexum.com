@@ -10,6 +10,7 @@ import GraphicDesign from "./components/GraphicDesign";
 import WebDev from "./components/WebDev";
 import Photography from "./components/Photography";
 import Header from "./components/Header";
+import Pets from "./components/Pets";
 import App from "./App";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ ReactDOM.render(
       <Route path="/graphicdesign" component={GraphicDesign} />
       <Route path="/webdev" component={WebDev} />
       <Route path="/photography" component={Photography} />
+      <Route path="/special" component={Pets} />
     </div>
   </Router>,
   document.getElementById("root")
