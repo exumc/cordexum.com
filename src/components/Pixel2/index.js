@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { Row } from "react-materialize";
 import { Link } from "react-router-dom";
+import { SRLWrapper } from "simple-react-lightbox";
 
 class Pixel2 extends React.Component {
   componentDidMount() {
@@ -18,8 +19,17 @@ class Pixel2 extends React.Component {
       observer.observe(target);
     });
   }
-  render() {
-    return (
+  render() {const options = {
+    overlayColor: "#212121",
+    showThumbnails: false,
+    enablePanzoom: false,
+    captionFontFamily: "Raleway, sans-serif",
+    captionFontSize: "22px",
+    captionFontWeight: "300",
+    transitionSpeed: 900
+  };
+  return (
+    <SRLWrapper options={options}>
       <div className="container center">
         <div className="portfolio">
           <Link to="/graphicdesign">
@@ -28,7 +38,7 @@ class Pixel2 extends React.Component {
           <Row>
             <img
               src="./images/pixel2/Design_01.jpg"
-              alt=""
+              alt="google pixel 2 brochure front"
               className="show-on-scroll responsive-img col s6 offset-s3 pixel-img"
             />
           </Row>
@@ -39,17 +49,17 @@ class Pixel2 extends React.Component {
           <Row>
             <img
               src="./images/pixel2/Design_02.jpg"
-              alt=""
+              alt="google pixel 2 brochure camera features"
               className="show-on-scroll responsive-img col s4 pixel-img"
             />
             <img
               src="./images/pixel2/Design_03.jpg"
-              alt=""
+              alt="google pixel 2 brochure info for musicians"
               className="show-on-scroll responsive-img col s4 pixel-img"
             />
             <img
               src="./images/pixel2/Design_04.jpg"
-              alt=""
+              alt="google pixel 2 brochure info for artists"
               className="show-on-scroll responsive-img col s4 pixel-img"
             />
           </Row>
@@ -61,12 +71,13 @@ class Pixel2 extends React.Component {
           <Row>
             <img
               src="./images/pixel2/Design_05.jpg"
-              alt=""
+              alt="google pixel 2 brochure back page"
               className="show-on-scroll responsive-img col s6 offset-s3 pixel-img"
             />
           </Row>
         </div>
       </div>
+      </SRLWrapper>
     );
   }
 }

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import './App.css';
-import Wrapper from './components/Wrapper'
-import Main from './components/Main'
-import Footer from './components/Footer'
+import React, { Component } from "react";
+import "./App.css";
+import Wrapper from "./components/Wrapper";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 class App extends Component {
   componentDidMount() {
@@ -21,10 +21,10 @@ class App extends Component {
   }
   render() {
     return (
-      <Wrapper>
-        <Main />
-        <Footer />
-      </Wrapper>
+        <Wrapper>
+          <Main />
+          <Footer />
+        </Wrapper>
     );
   }
 }

@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
                   <div className="center-align">
                     <h4>Graphic Design</h4>
                     <img
-                      src={`../images/graphicdesign/fender.jpg`}
+                      src={`../images/graphicdesign/3.jpg`}
                       alt=""
                       className="responsive-img"
                     />
@@ -63,7 +63,7 @@ class Portfolio extends React.Component {
                   <div className="center-align">
                     <h4>Photography</h4>
                     <img
-                      src={`../images/photography/01.jpg`}
+                      src={`../images/photography/2.jpg`}
                       alt=""
                       className="responsive-img"
                     />

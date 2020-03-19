@@ -13,22 +13,25 @@ import Header from "./components/Header";
 import Pets from "./components/Pets";
 import App from "./App";
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import SimpleReactLightbox from "simple-react-lightbox";
 
 ReactDOM.render(
-  <Router>
-    <div>
-      <Route exact path="/" component={Header} />
-      <Route path ="/main" component={App} />
-      <Route path="/portfolio" component={Portfolio} />
-      <Route path="/hendrix" component={Hendrix} />
-      <Route path="/pixel2" component={Pixel2} />
-      <Route path="/hch" component={Hch} />
-      <Route path="/studio" component={Studio} />
-      <Route path="/graphicdesign" component={GraphicDesign} />
-      <Route path="/webdev" component={WebDev} />
-      <Route path="/photography" component={Photography} />
-      <Route path="/special" component={Pets} />
-    </div>
-  </Router>,
+  <SimpleReactLightbox>
+    <Router>
+      <div>
+        <Route exact path="/" component={Header} />
+        <Route path="/main" component={App} />
+        <Route path="/portfolio" component={Portfolio} />
+        <Route path="/hendrix" component={Hendrix} />
+        <Route path="/pixel2" component={Pixel2} />
+        <Route path="/hch" component={Hch} />
+        <Route path="/studio" component={Studio} />
+        <Route path="/graphicdesign" component={GraphicDesign} />
+        <Route path="/webdev" component={WebDev} />
+        <Route path="/photography" component={Photography} />
+        <Route path="/animals" component={Pets} />
+      </div>
+    </Router>{" "}
+  </SimpleReactLightbox>,
   document.getElementById("root")
 );
