@@ -1,32 +1,17 @@
-import React, { Component } from "react";
-import "./App.css";
-import Wrapper from "./components/Wrapper";
-import Main from "./components/Main";
-import Footer from "./components/Footer";
+import React from "react";
+import "./App.scss";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-class App extends Component {
-  componentDidMount() {
-    const callback = function(entries) {
-      entries.forEach(entry => {
-        entry.target.classList.toggle("is-visible");
-      });
-    };
+import Home from "./Pages/Home";
 
-    const observer = new IntersectionObserver(callback);
-
-    const targets = document.querySelectorAll(".show-on-scroll");
-    targets.forEach(function(target) {
-      observer.observe(target);
-    });
-  }
-  render() {
-    return (
-        <Wrapper>
-          <Main />
-          <Footer />
-        </Wrapper>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={Home} />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

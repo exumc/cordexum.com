@@ -1,0 +1,46 @@
+$pink: #e91e63;
+$pink-light: #ff6090;
+$pink-dark: #b0003a;
+
+$blue: #03a9f4;
+$blue-light: #67daff;
+$blue-dark: #007ac1;
+* {
+  font-family: Raleway, sans-serif;
+}
+.enter {
+  position: relative;
+  background-color: black;
+  background-image: url(/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+
+  .welcome {
+    display: flex;
+    flex-direction: column;
+
+    .welcomeTxt {
+      position: absolute;
+      margin: 0 -200px;
+      top: -20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-family: Moret;
+      font-size: 236px;
+    }
+    .enterBtn {
+      background: $pink;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 80px;
+      max-width: 160px;
+      margin: auto;
+    }
+  }
+}
