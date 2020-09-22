@@ -1,6 +1,10 @@
 import React from "react";
+import M from "materialize-css";
 
 class Portraits extends React.Component {
+  componentDidMount() {
+    M.AutoInit();
+  }
   render() {
     let array = ["01", "02", "03", "04", "05", "06", "07", "08", "09"];
 
@@ -10,7 +14,7 @@ class Portraits extends React.Component {
           <img
             src={`../images/portraits/${image}.jpg`}
             alt=""
-            className="responsive-img"
+            className="responsive-img materialboxed"
           />
         </div>
       );
