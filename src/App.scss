@@ -5,9 +5,64 @@ $pink-dark: #b0003a;
 $blue: #03a9f4;
 $blue-light: #67daff;
 $blue-dark: #007ac1;
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+
+  .mainPage {
+    .portfolio-links {
+      display: grid;
+      grid-gap: 16px;
+      grid-template-columns: repeat(1fr, 33%);
+      grid-auto-flow: column;
+      margin: 40px auto;
+      text-align: center;
+
+      a {
+        font-size: 2rem;
+        font-weight: 100;
+        color: black;
+
+        &:hover {
+          color: $pink;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .grid-container {
+      display: grid;
+      grid-gap: 10px;
+      margin: 40px 0;
+      grid-template-columns: repeat(3, 33%);
+      grid-auto-rows: minmax(33%, auto);
+
+      img {
+        max-width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+}
+
 * {
   font-family: Raleway, sans-serif;
 }
+
+.bold {
+  font-weight: 900;
+}
+
+.light {
+  font-weight: 100;
+}
+
 .enter {
   position: relative;
   background-color: black;
@@ -19,20 +74,30 @@ $blue-dark: #007ac1;
   width: 100%;
   overflow: hidden;
 
+  @media screen and (min-width: 2000px) {
+    background-size: cover;
+  }
+
   .welcome {
     display: flex;
     flex-direction: column;
 
     .welcomeTxt {
       position: absolute;
-      margin: 0 -200px;
+      margin: 0 -400px;
       top: -20px;
       left: 0;
       right: 0;
       text-align: center;
       font-family: Moret;
-      font-size: 236px;
+      font-size: 2000%;
+      line-height: 1em;
+
+      @media screen and (min-width: 2000px) {
+        font-size: 2800%;
+      }
     }
+
     .enterBtn {
       background: $pink;
       position: absolute;
@@ -43,4 +108,10 @@ $blue-dark: #007ac1;
       margin: auto;
     }
   }
+}
+
+footer p {
+  font-size: 1.25em;
+  padding: 0;
+  margin: 8px;
 }
