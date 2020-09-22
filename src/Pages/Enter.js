@@ -15,7 +15,7 @@ class Enter extends React.Component {
             className="waves-effect waves-light btn enterBtn bold"
             role="button"
           >
-            Enter{" "}
+            Enter
           </Link>
         </div>
       </div>
