@@ -28,12 +28,12 @@ class Nav extends React.Component {
         className="white black-text"
       >
         <NavItem className="black-text" href="/home">
-          Home
+          Portfolio
         </NavItem>
-        <NavItem className="black-text" href="/about">
+        <NavItem className="black-text" href="/home/about">
           About
         </NavItem>
-        <NavItem className="black-text" href="/contact">
+        <NavItem className="black-text" href="/home/contact">
           Contact
         </NavItem>
       </Navbar>
