@@ -19,23 +19,25 @@ class Wrap extends React.Component {
         </header>
         <main>
           <div className="mainPage container">
-            <div className="portfolio-links">
-              <div>
-                <Link to="/home" className="studio">
-                  Studio
-                </Link>
+            <Route exact path="/home">
+              <div className="portfolio-links">
+                <div>
+                  <Link to="/home" className="studio">
+                    Studio
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/home/events" className="events">
+                    Events
+                  </Link>
+                </div>
+                <div>
+                  <Link to="/home/portraits" className="portraits">
+                    Portraits
+                  </Link>
+                </div>
               </div>
-              <div>
-                <Link to="/home/events" className="events">
-                  Events
-                </Link>
-              </div>
-              <div>
-                <Link to="/home/portraits" className="portraits">
-                  Portraits
-                </Link>
-              </div>
-            </div>
+            </Route>
             <Route exact path="/home" component={Studio} />
             <Route exact path="/home/events" component={Events} />
             <Route exact path="/home/portraits" component={Portraits} />

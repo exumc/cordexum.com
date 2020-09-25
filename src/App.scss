@@ -10,6 +10,11 @@ $blue-dark: #007ac1;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  overflow: hidden;
+}
+
+a:visited {
+  color: inherit;
 }
 
 main {
@@ -119,4 +124,67 @@ footer p {
 .active {
   color: $blue !important;
   text-decoration: underline;
+}
+
+.contact {
+  margin-bottom: 80px;
+  .title {
+    font-size: 16rem;
+    margin: -40px -200px;
+    font-family: Moret;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .content {
+    display: grid;
+    grid-template-areas: "l r";
+    grid-template-columns: 2fr 3fr;
+    margin-top: 80px;
+    .left {
+      position: relative;
+      overflow: hidden;
+      grid-area: l;
+
+      li {
+        margin-bottom: 20px;
+
+        &:hover .contact-reveal {
+          transition: opacity 5s;
+          opacity: 1;
+          transition: transform 0.5s;
+          transform: translateX(0);
+          color: $pink;
+        }
+
+        &:hover .contact-item {
+          cursor: pointer;
+          color: $blue;
+          text-decoration: underline;
+        }
+
+        .contact-item {
+          font-size: 2rem;
+          display: inline-block;
+          margin-right: 20px;
+        }
+
+        .contact-reveal {
+          // transition: opacity 0.1s;
+          opacity: 0;
+          transform: translateX(600px);
+        }
+      }
+    }
+    .right {
+      background-image: url(/images/jeep.jpg);
+      background-size: cover;
+      grid-area: r;
+      min-height: 400px;
+      min-width: 1000px;
+      position: relative;
+      // right: -40%;
+      left: 30%;
+    }
+  }
 }
