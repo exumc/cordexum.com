@@ -13,6 +13,7 @@ class Events extends React.Component {
                   <a
                     href="https://www.instagram.com/champexphoto"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     INSTAGRAM
                   </a>
@@ -20,7 +21,11 @@ class Events extends React.Component {
                 <div className="contact-reveal">@champexphoto</div>
               </li>
               <li>
-                <a href="mailto:cord@cordexum.com" target="_blank">
+                <a
+                  href="mailto:cord@cordexum.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="contact-item">EMAIL</div>
                 </a>
                 <div className="contact-reveal">cord@cordexum.com</div>
@@ -30,6 +35,7 @@ class Events extends React.Component {
                   <a
                     href="https://www.twitter.com/champexphoto"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     TWITTER
                   </a>
