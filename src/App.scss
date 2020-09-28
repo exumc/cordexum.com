@@ -6,6 +6,9 @@ $blue: #03a9f4;
 $blue-light: #67daff;
 $blue-dark: #007ac1;
 
+$bold: 900;
+$light: 100;
+
 #root {
   display: flex;
   min-height: 100vh;
@@ -15,6 +18,13 @@ $blue-dark: #007ac1;
 
 a:visited {
   color: inherit;
+}
+
+p {
+  font-size: 1.61rem;
+  line-height: 2.678rem;
+  letter-spacing: 1.823px;
+  font-weight: $light;
 }
 
 main {
@@ -126,9 +136,34 @@ footer p {
   text-decoration: underline;
 }
 
+.about {
+  margin-top: 80px;
+  .banner {
+    margin: 0 -280px;
+    background-size: cover;
+    min-height: 240px;
+    background-image: url(/images/jeep.jpg);
+  }
+  .content {
+    margin: 80px 0;
+    .title {
+      font-weight: $bold;
+      font-size: 6rem;
+    }
+  }
+  a {
+    color: $pink;
+    margin-right: 20px;
+  }
+  a:hover {
+    color: $blue;
+    text-decoration: underline;
+  }
+}
+
 .contact {
   margin-bottom: 80px;
-  .title {
+  .large-title {
     font-size: 16rem;
     margin: -40px -200px;
     font-family: Moret;

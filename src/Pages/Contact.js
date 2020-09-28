@@ -4,7 +4,7 @@ class Events extends React.Component {
   render() {
     return (
       <div className="contact">
-        <div className="title">GET IN TOUCH</div>
+        <div className="large-title">GET IN TOUCH</div>
         <div className="content">
           <div className="left">
             <ul>
