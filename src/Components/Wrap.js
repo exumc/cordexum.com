@@ -5,6 +5,8 @@ import About from "../Pages/About";
 import Contact from "../Pages/Contact";
 
 import Nav from "../Components/Nav";
+import PortfolioNav from "../Components/PortfolioNav";
+
 import MyFooter from "../Components/MyFooter";
 import Studio from "../Components/Studio";
 import Events from "../Components/Events";
@@ -19,30 +21,14 @@ class Wrap extends React.Component {
         </header>
         <main>
           <div className="mainPage container">
-            <Route exact path="/home">
-              <div className="portfolio-links">
-                <div>
-                  <Link to="/home" className="studio">
-                    Studio
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/home/events" className="events">
-                    Events
-                  </Link>
-                </div>
-                <div>
-                  <Link to="/home/portraits" className="portraits">
-                    Portraits
-                  </Link>
-                </div>
-              </div>
+            <Route path="/home">
+              <PortfolioNav />
+              <Route exact path="/home" component={Studio} />
+              <Route exact path="/home/events" component={Events} />
+              <Route exact path="/home/portraits" component={Portraits} />
             </Route>
-            <Route exact path="/home" component={Studio} />
-            <Route exact path="/home/events" component={Events} />
-            <Route exact path="/home/portraits" component={Portraits} />
-            <Route exact path="/home/about" component={About} />
-            <Route exact path="/home/contact" component={Contact} />
+            <Route path="/about" component={About} />
+            <Route path="/contact" component={Contact} />
           </div>
         </main>
         <footer className="page-footer grey darken-3">

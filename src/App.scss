@@ -124,7 +124,16 @@ main {
     }
   }
 }
-
+header {
+  .brand-logo {
+    @media screen and(max-width:340px) {
+      font-size: 1.5rem;
+    }
+  }
+  .sidenav-trigger i {
+    color: black;
+  }
+}
 footer p {
   font-size: 1.25em;
   padding: 0;
@@ -142,7 +151,7 @@ footer p {
     margin: 0 -280px;
     background-size: cover;
     min-height: 240px;
-    background-image: url(/images/jeep.jpg);
+    background-image: url(/images/my-jeep.jpg);
   }
   .content {
     margin: 80px 0;
@@ -169,16 +178,30 @@ footer p {
     font-family: Moret;
     font-weight: bold;
     text-align: center;
+    @media screen and (max-width: 1300px) {
+      font-size: 12rem;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 8rem;
+      margin-top: 40px;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 4rem;
+    }
   }
 
   .content {
     display: grid;
     grid-template-areas: "l r";
-    grid-template-columns: 2fr 3fr;
     margin-top: 80px;
-    .left {
+    @media screen and(max-width:768px) {
+      grid-template-areas:
+        "l"
+        "r";
+    }
+    .left-content {
       position: relative;
-      overflow: hidden;
+      // overflow: hidden;
       grid-area: l;
 
       li {
@@ -211,15 +234,22 @@ footer p {
         }
       }
     }
-    .right {
+    .right-content {
       background-image: url(/images/jeep.jpg);
       background-size: cover;
       grid-area: r;
       min-height: 400px;
       min-width: 1000px;
       position: relative;
-      // right: -40%;
       left: 30%;
+      @media screen and(max-width:768px) {
+        left: 0;
+        right: 0;
+        margin: 0 -60px;
+        min-width: 100%;
+        height: 100%;
+        background-position-x: -240px;
+      }
     }
   }
 }

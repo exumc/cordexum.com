@@ -10,6 +10,8 @@ function App() {
     <Router>
       <Route exact path="/" component={Enter} />
       <Route path="/home" component={Wrap} />
+      <Route path="/about" component={Wrap} />
+      <Route path="/contact" component={Wrap} />
     </Router>
   );
 }

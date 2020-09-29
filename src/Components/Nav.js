@@ -7,7 +7,7 @@ class Nav extends React.Component {
       <Navbar
         alignLinks="right"
         brand={
-          <a className="brand-logo black-text bold" href="/home">
+          <a className="black-text bold" href="/home">
             Cord Exum
           </a>
         }
@@ -30,10 +30,10 @@ class Nav extends React.Component {
         <NavItem className="black-text" href="/home">
           Portfolio
         </NavItem>
-        <NavItem className="black-text" href="/home/about">
+        <NavItem className="black-text" href="/about">
           About
         </NavItem>
-        <NavItem className="black-text" href="/home/contact">
+        <NavItem className="black-text" href="/contact">
           Contact
         </NavItem>
       </Navbar>

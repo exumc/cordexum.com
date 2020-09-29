@@ -6,7 +6,7 @@ class Events extends React.Component {
       <div className="contact">
         <div className="large-title">GET IN TOUCH</div>
         <div className="content">
-          <div className="left">
+          <div className="left-content">
             <ul>
               <li>
                 <div className="contact-item">
@@ -45,7 +45,7 @@ class Events extends React.Component {
             </ul>
           </div>
 
-          <div className="right"></div>
+          <div className="right-content"></div>
         </div>
       </div>
     );
