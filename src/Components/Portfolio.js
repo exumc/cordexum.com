@@ -8,7 +8,7 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className="mainPage">
-        <div className="container portfolio-links">
+        {/* <div className="container portfolio-links">
           <div>
             <Link to="/home">Studio</Link>
           </div>
@@ -22,7 +22,7 @@ class Portfolio extends React.Component {
 
         <Route path="/home" component={Studio} />
         <Route path="/home/events" component={Events} />
-        <Route path="/home/portraits" component={Portraits} />
+        <Route path="/home/portraits" component={Portraits} /> */}
       </div>
     );
   }
