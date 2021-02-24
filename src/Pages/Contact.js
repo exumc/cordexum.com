@@ -21,13 +21,16 @@ class Events extends React.Component {
                 <div className="contact-reveal">@champexphoto</div>
               </li>
               <li>
-                <a
-                  href="mailto:cord@cordexum.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <div className="contact-item">EMAIL</div>
-                </a>
+                <div className="contact-item">
+                  <a
+                    href="mailto:cord@cordexum.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    EMAIL
+                  </a>
+                </div>
+
                 <div className="contact-reveal">cord@cordexum.com</div>
               </li>
               <li>
