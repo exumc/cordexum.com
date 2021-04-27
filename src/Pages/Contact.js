@@ -43,7 +43,7 @@ class Events extends React.Component {
                     TWITTER
                   </a>
                 </div>
-                <div className="contact-reveal">@excordo</div>
+                <div className="contact-reveal">@champexphoto</div>
               </li>
             </ul>
           </div>
