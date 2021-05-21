@@ -1,1 +1,0 @@
-Personal portfolio built utilizing React, JQuery, and MaterializeCSS
