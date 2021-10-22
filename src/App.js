@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Wrap from "./Components/Wrap";
 import Enter from "./Pages/Enter";
+import BigPage from "./Pages/BigPage";
 
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
@@ -12,6 +13,7 @@ function App() {
       <Route path="/home" component={Wrap} />
       <Route path="/about" component={Wrap} />
       <Route path="/contact" component={Wrap} />
+      <Route exact path="/bigpage" component={BigPage} />
     </Router>
   );
 }

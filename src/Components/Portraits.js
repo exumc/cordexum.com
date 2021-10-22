@@ -17,7 +17,7 @@ class Portraits extends React.Component {
       return (
         <div className="grid-item" key={image}>
           <img
-            src={`../images/portraits/${image}.jpg`}
+            src={`../images/portfolio/${image}.jpg`}
             alt=""
             className="responsive-img materialboxed"
           />

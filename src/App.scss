@@ -141,6 +141,7 @@ main {
     }
   }
 }
+
 header {
   .brand-logo {
     @media screen and(max-width:340px) {
@@ -151,6 +152,7 @@ header {
     color: black;
   }
 }
+
 footer p {
   font-size: 1.25em;
   padding: 0;
@@ -167,7 +169,7 @@ footer p {
   .banner {
     margin: 0 -280px;
     background-size: cover;
-    min-height: 240px;
+    min-height: 520px;
     background-image: url(/images/my-jeep.jpg);
   }
   .content {
@@ -270,5 +272,14 @@ footer p {
         background-position-x: -240px;
       }
     }
+  }
+}
+
+.bigPage {
+  .grid-container {
+    display: grid;
+    grid-gap: 10px;
+    margin: 40px 0;
+    grid-template-columns: repeat(3, 33%);
   }
 }
