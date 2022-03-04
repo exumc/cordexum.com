@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import About from "../Pages/About";
 import Contact from "../Pages/Contact";
+import HeadShots1 from "../Pages/Headshots1";
+
 
 import Nav from "../Components/Nav";
 import PortfolioNav from "../Components/PortfolioNav";
@@ -29,6 +31,7 @@ class Wrap extends React.Component {
             </Route>
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/922093" component={HeadShots1} />
           </div>
         </main>
         <footer className="page-footer grey darken-3">
