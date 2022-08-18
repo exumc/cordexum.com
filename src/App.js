@@ -3,8 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./App.scss";
 import Wrap from "./Components/Wrap";
 import Enter from "./Pages/Enter";
-import BigPage from "./Pages/BigPage";
-
+import Photography from "./Pages/Photography";
 
 function App() {
   return (
@@ -13,9 +12,8 @@ function App() {
       <Route path="/home" component={Wrap} />
       <Route path="/about" component={Wrap} />
       <Route path="/contact" component={Wrap} />
-      <Route exact path="/bigpage" component={BigPage} />
+      <Route exact path="/photography" component={Photography} />
       <Route exact path="/922093" component={Wrap} />
-
     </Router>
   );
 }

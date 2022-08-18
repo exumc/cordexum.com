@@ -1,7 +1,7 @@
 import React from "react";
 import M from "materialize-css";
 
-class BigPage extends React.Component {
+class Photography extends React.Component {
   componentDidMount() {
     M.AutoInit();
     // if (this.props.location.pathname === "/home/portraits") {
@@ -61,4 +61,4 @@ class BigPage extends React.Component {
   }
 }
 
-export default BigPage;
+export default Photography;
