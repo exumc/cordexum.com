@@ -33,18 +33,6 @@ class Events extends React.Component {
 
                 <div className="contact-reveal">cord@cordexum.com</div>
               </li>
-              <li>
-                <div className="contact-item">
-                  <a
-                    href="https://www.twitter.com/champexphoto"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    TWITTER
-                  </a>
-                </div>
-                <div className="contact-reveal">@champexphoto</div>
-              </li>
             </ul>
           </div>
 
